@@ -20,6 +20,17 @@ function Home() {
   const [textIndex, setTextIndex] = useState(0);
 
   const handleYesClick = () => {
+    const formUrl =
+      'https://docs.google.com/forms/d/e/1FAIpQLSfhmy8-B5F8Z-_MryMmhxu5ARBPBtXP4qE55PVBKgHPZLHRmQ/formResponse';
+    const formData = new FormData();
+    formData.append('entry.2023583450', 'YES');
+
+    fetch(formUrl, {
+      method: 'POST',
+      body: formData,
+      mode: 'no-cors',
+    }).catch(() => {});
+
     navigate('/yes');
   };
 
