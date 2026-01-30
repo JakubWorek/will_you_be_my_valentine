@@ -42,7 +42,7 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/bg.png)' }}>
+    <div className="min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(bg.png)' }}>
       <div className="min-h-screen w-full backdrop-blur-sm bg-black/30 flex items-center justify-center">
         <div className="bg-pink-400 rounded-3xl shadow-2xl p-12 max-w-lg w-full mx-4 relative">
           <h1 className="text-5xl font-bold text-white text-center mb-8 drop-shadow-lg">
